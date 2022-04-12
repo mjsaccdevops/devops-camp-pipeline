@@ -6,7 +6,7 @@ pipeline {
         stage('Application repository') {
             steps {
                 echo "Cloning application repository"
-                sh 'git clone <https://github.com/mjsaccdevops/afs-labs-student>'
+                sh 'git clone https://github.com/mjsaccdevops/afs-labs-student.git'
             }
         }
         stage('Application docker build') {
