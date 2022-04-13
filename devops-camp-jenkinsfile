@@ -4,8 +4,8 @@ pipeline {
     }
     environment{
         PIPELINE_HASH = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
-        HARBOR-REGISTRY = 'harbor.dev.afsmtddso.com'
-        HARBOR-PROJECT = 'schwartz-harbor-project'
+        HARBOR_REGISTRY = 'harbor.dev.afsmtddso.com'
+        HARBOR_PROJECT = 'schwartz-harbor-project'
         APP_IMAGE_NAME = 'app'
         DB_IMAGE_NAME = 'db'
     }
