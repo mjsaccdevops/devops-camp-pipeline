@@ -95,3 +95,5 @@ pipeline {
         }
     }
 }
+
+// This is a test comment to check app build independent of db build
